@@ -62,10 +62,10 @@ trait WidgetUserCountActivityInjector
         }
 
         $fetchData = [];
-        //$options = \XF::options();
+        $options = \XF::options();
         foreach ($this->widgetCountActivityInjector as $config)
         {
-            /*
+            
             if (empty($options->svUADisplayCounts[$config['activeKey']]))
             {
                 continue;
@@ -74,7 +74,7 @@ trait WidgetUserCountActivityInjector
             {
                 continue;
             }
-            */
+            
             $callback = $config['fetcher'];
             if (is_string($callback))
             {
