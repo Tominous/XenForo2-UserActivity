@@ -669,14 +669,14 @@ class UserActivity extends Repository
 
             if (false) //$useLua
             {
-                /*
+                
                 $ret = $credis->evalSha(self::LUA_IFZADDEXPIRE_SH1, [$key], [$score, $raw, $onlineStatusTimeout]);
                 if ($ret === null)
                 {
                     $script = "";
                     $credis->eval($script, [$key], [$score, $raw, $onlineStatusTimeout]);
                 }
-                */
+                
             }
             else
             {
